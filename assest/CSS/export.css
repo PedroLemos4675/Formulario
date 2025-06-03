@@ -20,6 +20,7 @@
     --pink: #F682A5;
 
     --font-family: 'Roboto', sans-serif;
-    --text: 400 1rem/1.5 var(--font-family)
-    --text-sm: 400 .875rem/1.4  var(--font-family)
+    --text: 400 1.6rem/1.5 var(--font-family);
+    --text-sm: 400 1rem/1.4  var(--font-family);
+    font-size: 62.5%;
 }    
