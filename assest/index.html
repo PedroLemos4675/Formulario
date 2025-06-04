@@ -88,14 +88,49 @@
                     <div>
                         <div>
                             <label for="city">Cidade</label> <br>
-                            <input type="text" placeholder="Ex: Careaçu">
+                            <input type="text" id="city" placeholder="Ex: Careaçu">
                         </div>
 
                         <div>
                             <label for="estado">Estado</label> <br>
-                            <input type="text" maxlength="2" placeholder="Ex: MG">
+                            <input type="text" id="estado" maxlength="2" placeholder="Ex: MG">
                         </div>
                     </div>
+                </div>
+
+                <div>
+                    <h2>Informações do responável</h2>
+
+                    <div>
+                        <label for="responsavel">Nome do resoponsável</label> <br>
+                        <input type="text" id="responsavel" placeholder="Ex: Germando de Souza Lemos">
+                        <p>Principal responsável legal e contato de emergência</p>
+                    </div>
+
+                    <div>
+                        <label for="phone">Telefone</label> <br>
+                        <input type="tel" id="phone" placeholder="(00) 0 0000-0000" maxlength="14">
+                    </div>
+
+                    <div>
+                        <label for="email">E-mail</label> <br>
+                        <input type="email"id="email" placeholder="Ex: pedrolemos4675@gmail.com">
+                    </div>
+                </div>
+
+                <div>
+                    <h2>Opções de matrícula</h2>
+
+                    <label for="turno">Selecione um turno de estado</label>
+
+                </div>
+
+                <div>
+                    <input type="checkbox">
+                    <p>
+                        Declaro que li e concordo com os <span>Termos e Condições</span> e
+                         com a <span>Política de Privacidade</span> da escola Estrela do Amanhã. 
+                    </p>
                 </div>
             </div>    
         </main>
@@ -103,7 +138,7 @@
         <aside>
             <div class="aside-container">
                 <div>
-                    <span><img src="./icons/estrelas-do-amanha.svg"></span>
+                    <span id="estrela"><img src="./icons/estrelas-do-amanha.svg"></span>
                     <h1>Porque cada momento de <span class="txt-color">aprendizado</span> conta</h1>
                     <p>Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.</p>
                 </div>
