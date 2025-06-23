@@ -1,0 +1,12 @@
+.label {
+    font-size: 1.4rem;
+    color: var(--text-secondary);
+    font-family: var(--font-family);
+}
+
+.justify {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+

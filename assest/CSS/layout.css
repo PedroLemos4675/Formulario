@@ -63,6 +63,362 @@ main header p {
     max-width: 52.8rem;
 }
 
+form {
+    width: 100%;
+}
+
+form h2 {
+    font-size: 1.6rem;
+    color: var(--text-primary);
+    font-family: var(--font-family);
+    margin-block: 4.8rem 2.4rem;
+}
+
+input, select, textarea  {
+    border: solid 1px var(--stroke-default);
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 4px solid var(--surface-secondary);
+    border: solid 1px var(--stroke-highlight);
+}
+
+select {
+    background: url(../icons/arrow-down-01.svg)
+    no-repeat calc(100% - 1.2rem);
+}
+
+#name {
+    width: 100%;
+    height: 7.2rem;
+}
+
+#name input {
+    width: 100%;
+    height: 4.8rem;
+    padding-left: 1.6rem;
+    border: solid 1px;
+    border-radius: 8px;
+    margin-top: 0.4rem;
+    font-family: var(--font-family);
+}
+
+#birthday {
+    width: 100%;
+    height: 7.2rem;
+    margin-top: 2.4rem;
+}
+
+#birthday input {
+    width: 100%;
+    height: 4.8rem;
+    margin-top: 0.4rem;
+    border: solid 1px;
+    border-radius: 8px;
+    padding-inline: 1.6rem;
+}
+
+
+#gender {
+    width: 100%;
+    height: 7.2rem;
+    margin-top: 2.4rem;
+}
+
+#gender select {
+    width: 100%;
+    height: 4.8rem;
+    border: solid 1px;
+    border-radius: 8px;
+    padding-inline: 1.6rem;
+    margin-top: 0.4rem;
+    appearance: none;
+}
+
+#inf-medic {
+    width: 100%;
+    height: 14.4rem;
+    margin-block: 2.4rem;
+}
+
+#inf-medic textarea {
+    width: 100%;
+    height: 12rem;
+    padding: 1.6rem;
+    font-family: var(--font-family);
+    margin-top: 0.4rem;
+    border-radius: 8px;
+}
+
+#cert {
+    width: 100%;
+    height: 18.8rem;
+    margin-bottom: 4.8rem;
+
+    .upload-area {
+        border: 2px dashed #ddd;
+        border-radius: 12px;
+        padding: 40px;
+        text-align: center;
+        color: #aaa;
+        cursor: pointer;
+        margin-top: 2.4rem;
+      }
+  
+      .upload-area:hover {
+        border-color: #bbb;
+      }
+  
+      .upload-area input[type="file"] {
+        display: none;
+      }
+  
+      .upload-icon {
+        margin-bottom: 10px;
+
+        img {
+            width: 4.8rem;
+            height: auto;
+        }
+      }
+  
+      .upload-text {
+        font-size: 14px;
+        color: #888;
+        font-family: var(--font-family);
+      }
+}
+
+
+#endereco {
+    width: 100%;
+    height: 30.8rem;  
+
+
+    input {
+    width: 100%;
+    height: 4.8rem;
+    padding-inline: 1.6rem;
+    border-radius: 8px;
+    margin-top: 0.4rem;
+}
+
+    #c-e-p {
+        margin-bottom: 2.4rem;
+    }
+    
+    #residencia {
+        margin-bottom: 2.4rem;
+    }
+
+    #cidade {
+        margin-bottom: 2.4rem;
+    }
+}
+
+#resp-info {
+    width: 100%;
+    height: 35.6rem;
+
+    div {
+        margin-top: 2.4rem;
+    }
+
+    p {
+        margin-top: 0.4rem;
+        font-family: var(--font-family);
+        color: var(--text-secondary);
+        font-size: 1.4rem;
+    }
+
+    input {
+        width: 100%;
+        height: 4.8rem;
+        padding-inline: 1.6rem;
+        border-radius: 8px;
+        margin-top: 0.4rem;
+    }
+} 
+
+#final {
+    width: 100%;
+    margin-top: 2.4rem;
+    height: 4.8rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+
+    input {
+        height: 1.6rem;
+        width: 2.7rem;
+        border: solid 1px var(--paragrafo);
+        border-radius: 4px;
+    }
+
+    p {
+        font-size: 1.6rem;
+        font-family: var(--font-family);
+        color: var(--paragrafo);
+    }
+
+    span {
+        color: var(--text-highlight);
+    }
+
+}
+
+  .option-group {
+    display: flex;
+    gap: 16px;
+  }
+
+  .option {
+    position: relative;
+    width: 150px;
+    height: 100px;
+  }
+
+  .option input[type="radio"] {
+    display: none;
+  }
+
+  .option label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .option label:hover {
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+
+  .option input[type="radio"]:checked + label {
+    border-color: #f44336;
+  }
+
+  .option input[type="radio"]:checked + label::before {
+    content: "✔";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background-color: #f44336;
+    color: white;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    border: 2px solid white;
+  }
+
+  .icon {
+    font-size: 30px;
+    margin-bottom: 8px;
+  }
+
+  .manha {
+    color: #90a4ae;
+  }
+
+  .tarde {
+    color: #fbc02d;
+  }
+
+  .label-text {
+    color: #333;
+  }
+
+.option-group {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.option {
+    width: 25.6rem;
+    margin-top: 2.4rem;
+}
+
+#matricula {
+    width: 100%;
+
+    p {
+        margin-block: 4.8rem 2.4rem;
+        font-size: 1.4rem;
+        font-family: var(--font-family);
+        color: var(--paragrafo);
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 16px;
+        max-width: 600px;
+      }
+  
+      .option {
+        position: relative;
+      }
+  
+      input[type="radio"] {
+        display: none;
+      }
+  
+      label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #ddd;
+        border-radius: 10px;
+        padding: 16px;
+        height: 120px;
+        cursor: pointer;
+        transition: 0.3s ease;
+        position: relative;
+      }
+  
+      label:hover {
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      }
+  
+      input[type="radio"]:checked + label {
+        border-color: #f44336;
+      }
+  
+      input[type="radio"]:checked + label::before {
+        content: "✔";
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        background-color: #f44336;
+        color: white;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid white;
+      }
+  
+      .icon {
+        font-size: 32px;
+        margin-bottom: 8px;
+      }
+}
+
 aside {
     background-color: var(--surface-secondary);
     padding: 6.4rem;

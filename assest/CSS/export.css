@@ -22,5 +22,13 @@
     --font-family: 'Roboto', sans-serif;
     --text: 400 1.6rem/1.5 var(--font-family);
     --text-sm: 400 1rem/1.4  var(--font-family);
+
+    --paragrafo: #78716C;
+
     font-size: 62.5%;
 }    
+
+h1, h2 {
+    font-family: var(--font-family);
+    color: var(--text-primary);
+}

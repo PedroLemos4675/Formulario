@@ -36,17 +36,17 @@
                     <h2>informações da criança</h2>
 
                     <div id="name">
-                        <label for="nome">Nome</label> <br>
+                        <label for="nome" class="label">Nome</label> <br>
                         <input type="text" id="nome" placeholder="Ex: Pedro Augusto Ferreira de Souza Lemos">
                     </div>
 
-                    <div>
-                        <label for="birthday">Data de nascimento</label> <br>
-                        <input type="date" id="birthday">
+                    <div id="birthday">
+                        <label for="nascimento" class="label">Data de nascimento</label> <br>
+                        <input type="date" id="nascimento">
                     </div>
 
-                    <div>
-                        <label for="genero"> Sexo</label> <br>
+                    <div id="gender">
+                        <label for="genero" class="label"> Sexo</label> <br>
                         <select id="genero">
                             <option value="none">Selecione</option>
                             <option value="man">Homem</option>
@@ -55,84 +55,170 @@
                         </select>
                     </div>
 
-                    <div>
-                        <label for="inf">Informações médicas</label> <br>
-                        <textarea id="inf" cols="30" rows="15" placeholder="Ex:Tem alergia a camarão"></textarea>
+                    <div id="inf-medic">
+                        <label for="inf" class="label">Informações médicas</label> <br>
+                        <textarea id="inf" cols="30" rows="15" placeholder="Ex: Tem alergia a camarão"></textarea>
                     </div>
 
-                    <div>
-                        <label for="certidao">Certidão de nascimento</label>
-                        <input type="file" name="" id="certidao">
+                    <div id="cert">
+                        <label for="certidao" class="label">Certidão de nascimento</label> <br>
+                        
+                        <div class="upload-area">
+                            <div class="upload-icon"><img src="./icons/cloud-upload.svg"></div>
+                            <div class="upload-text">Clique aqui para<br>selecionar arquivos</div>
+                            <input type="file" name="file" multiple>
+                          </div>
+                        
                     </div>
-                </form>
+                
 
-                <div>
-                    <h2>Endereço residencial</h2>
-                    <div>
-                        <label for="cep">CEP</label> <br>
-                        <input type="number" id="cep" maxlength="9" placeholder="00000-000">
+                    <div id="endereco">
+                        <h2>Endereço residencial</h2>
+                        <div id="c-e-p">
+                            <label for="cep" class="label">CEP</label> <br>
+                            <input type="text" id="cep" maxlength="9" placeholder="00000-000">
+                        </div>
+                        
+                        <div id="residencia" class="justify">
+                            <div>
+                                <label for="rua" class="label">Rua</label> <br>
+                                <input type="text" id="rua" placeholder="Ex: Rua Goiás">
+                            </div>
+
+                            <div>
+                                <label for="numero" class="label">Número</label> <br>
+                                <input type="number" id="number" maxlength="9" placeholder="Ex: 123">
+                            </div>
+                        </div>
+
+                        <div id="cidade" class="justify">
+                            <div>
+                                <label for="city" class="label">Cidade</label> <br>
+                                <input type="text" id="city" placeholder="Ex: Careaçu">
+                            </div>
+
+                            <div>
+                                <label for="estado" class="label">Estado</label> <br>
+                                <input type="text" id="estado" maxlength="3" placeholder="Ex: MG">
+                            </div>
+                        </div>
                     </div>
+
+                    <div id="resp-info">
+                        <h2>Informações do responável</h2>
+
+                        <div>
+                            <label for="responsavel" class="label">Nome do resoponsável</label> <br>
+                            <input type="text" id="responsavel" placeholder="Ex: Germando de Souza Lemos">
+                            <p>Principal responsável legal e contato de emergência</p>
+                        </div>
+
+                        <div>
+                            <label for="phone"class="label">Telefone</label> <br>
+                            <input type="tel" id="phone" placeholder="(00) 0 0000-0000" maxlength="14">
+                        </div>
+
+                        <div>
+                            <label for="email" class="label">E-mail</label> <br>
+                            <input type="email"id="email" placeholder="Ex: pedrolemos4675@gmail.com">
+                        </div>
+                    </div>
+
+                    <div id="matricula">
+                        <h2>Opções de matrícula</h2>
+
+                        <p class="label">Selecione um turno de estado</p>
+
+                        <div class="option-group">
+                            <!-- Manhã -->
+                            <div class="option">
+                              <input type="radio" id="manha" name="periodo" checked>
+                              <label for="manha">
+                                <div class="icon manha"><img src="./icons/sun-cloud-02.svg"></div>
+                                <div class="label-text">Manhã</div>
+                              </label>
+                            </div>
+                        
+                            <!-- Tarde -->
+                            <div class="option">
+                              <input type="radio" id="tarde" name="periodo">
+                              <label for="tarde">
+                                <div class="icon tarde"><img src="./icons/sun-02.svg"></div>
+                                <div class="label-text">Tarde</div>
+                              </label>
+                            </div>
+                        </div>
+
+                        <p>Em qual esporte você gostaria de inscrever seu filho?</p>
+
+                        <div class="grid">
+                            <!-- Futebol -->
+                            <div class="opt">
+                              <input type="radio" id="futebol" name="esporte">
+                              <label for="futebol">
+                                <div class="icon futebol"><img src="./icons/football.svg"></div>
+                                <div class="label-text">Futebol</div>
+                              </label>
+                            </div>
+                        
+                            <!-- Basquete -->
+                            <div class="opt">
+                              <input type="radio" id="basquete" name="esporte">
+                              <label for="basquete">
+                                <div class="icon basquete"><img src="./icons/basketball-02.svg"></div>
+                                <div class="label-text">Basquete</div>
+                              </label>
+                            </div>
+                        
+                            <!-- Natação -->
+                            <div class="opt">
+                              <input type="radio" id="natacao" name="esporte" checked>
+                              <label for="natacao">
+                                <div class="icon natacao"><img src="./icons/swimming.svg"></div>
+                                <div class="label-text">Natação</div>
+                              </label>
+                            </div>
+                        
+                            <!-- Yoga -->
+                            <div class="opt">
+                              <input type="radio" id="yoga" name="esporte">
+                              <label for="yoga">
+                                <div class="icon yoga"><img src="./icons/yoga-02.svg"></div>
+                                <div class="label-text">Yoga</div>
+                              </label>
+                            </div>
+                        
+                            <!-- Volley 1 -->
+                            <div class="opt">
+                              <input type="radio" id="volei1" name="esporte">
+                              <label for="volei1">
+                                <div class="icon volei"><img src="./icons/volleyball.svg"></div>
+                                <div class="label-text">Volley</div>
+                              </label>
+                            </div>
                     
-                    <div>
-                        <div>
-                            <label for="rua">Rua</label> <br>
-                            <input type="text" id="rua" placeholder="Ex: Rua Goiás">
-                        </div>
+                        
+                            <!-- Boxe -->
+                            <div class="opt">
+                              <input type="radio" id="boxe" name="esporte">
+                              <label for="boxe">
+                                <div class="icon boxe"><img src="./icons/boxing-glove-01.svg"></div>
+                                <div class="label-text">Boxe</div>
+                              </label>
+                            </div>
+                          </div>
 
-                        <div>
-                            <label for="numero">Número</label> <br>
-                            <input type="number" id="number" maxlength="9" placeholder="Ex: 123">
-                        </div>
                     </div>
 
-                    <div>
-                        <div>
-                            <label for="city">Cidade</label> <br>
-                            <input type="text" id="city" placeholder="Ex: Careaçu">
-                        </div>
-
-                        <div>
-                            <label for="estado">Estado</label> <br>
-                            <input type="text" id="estado" maxlength="2" placeholder="Ex: MG">
-                        </div>
+                    <div id="final">
+                        <input type="checkbox" id="checkbox">
+                        <p>
+                            Declaro que li e concordo com os <span>Termos e Condições</span> e
+                            com a <span>Política de Privacidade</span> da escola Estrela do Amanhã. 
+                        </p>
                     </div>
-                </div>
-
-                <div>
-                    <h2>Informações do responável</h2>
-
-                    <div>
-                        <label for="responsavel">Nome do resoponsável</label> <br>
-                        <input type="text" id="responsavel" placeholder="Ex: Germando de Souza Lemos">
-                        <p>Principal responsável legal e contato de emergência</p>
-                    </div>
-
-                    <div>
-                        <label for="phone">Telefone</label> <br>
-                        <input type="tel" id="phone" placeholder="(00) 0 0000-0000" maxlength="14">
-                    </div>
-
-                    <div>
-                        <label for="email">E-mail</label> <br>
-                        <input type="email"id="email" placeholder="Ex: pedrolemos4675@gmail.com">
-                    </div>
-                </div>
-
-                <div>
-                    <h2>Opções de matrícula</h2>
-
-                    <label for="turno">Selecione um turno de estado</label>
-
-                </div>
-
-                <div>
-                    <input type="checkbox">
-                    <p>
-                        Declaro que li e concordo com os <span>Termos e Condições</span> e
-                         com a <span>Política de Privacidade</span> da escola Estrela do Amanhã. 
-                    </p>
-                </div>
-            </div>    
+                </div>    
+            </form>
         </main>
 
         <aside>
